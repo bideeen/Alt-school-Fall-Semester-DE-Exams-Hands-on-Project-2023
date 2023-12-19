@@ -52,6 +52,9 @@ class ExpenseDatabase:
                 return expense
         return None
         
+    def get_expenses_by_title(self, title):
+        return [expense for expense in self.expenses if expense.title == title]
+
         
 
         
