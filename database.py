@@ -7,7 +7,7 @@ from datetime import datetime
 # The Expense Class
 class Expense:
 
-    def __init__(self, title, amount) -> None:
+    def __init__(self, title, amount):
         self.id =  str(uuid.uuid4())
         self.title = title
         self.amount = amount
@@ -15,3 +15,11 @@ class Expense:
         self.updated_at = self.created_at       
 
 
+    def update(self, title=None, amount=None):
+        if title:
+            self.title = title
+        if amount:
+            self.amount = amount
+        self.updated_at = datetime.utcnow()
+        
+    
