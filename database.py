@@ -55,6 +55,9 @@ class ExpenseDatabase:
     def get_expenses_by_title(self, title):
         return [expense for expense in self.expenses if expense.title == title]
 
+
+    def to_dict(self):
+        return [expense.to_dict() for expense in self.expenses]
         
 
         
