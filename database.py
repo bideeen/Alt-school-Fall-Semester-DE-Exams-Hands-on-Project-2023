@@ -22,4 +22,13 @@ class Expense:
             self.amount = amount
         self.updated_at = datetime.utcnow()
         
-    
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'amount': self.amount,
+            'created_at': self.created_at.strftime("%Y-%m-%d %H:%M:%S"),
+            'updated_at': self.updated_at.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        
+        
