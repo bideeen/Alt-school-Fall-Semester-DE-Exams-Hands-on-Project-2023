@@ -46,7 +46,11 @@ class ExpenseDatabase:
     def remove_expense(self, expense_id):
         self.expenses = [expense for expense in self.expenses if expense.id != expense_id]
         
-    
+    def get_expense_by_id(self, expense_id):
+        for expense in self.expenses:
+            if expense.id == expense_id:
+                return expense
+        return None
         
         
 
