@@ -7,18 +7,21 @@ This Python project consists of two classes, `Expense` and `ExpenseDatabase`, th
 
 ## Usage
 To use this code:
-1. Clone the repository to your local machine using the following command:
+ - Clone the repository to your local machine using the following command:
    ```bash
    git clone https://github.com/bideeen/Alt-school-Fall-Semester-DE-Exams-Hands-on-Project-2023.git
 
 ## Running the Code:
  - Ensure you have Python installed on your system.
  - Open a terminal or command prompt.
- - Navigate to the project directory.
- - Run your Python interpreter.
+ - Run the test script by executing:
+  ```bash
+  python test_expense_app.py
+  ```
 
 # Example Usage
-```
+The test_expense_app.py script demonstrates the functionality of the Expense and ExpenseDatabase classes. Below is an example of how you can use these classes in your own code:
+```python
 from expenseApp import Expense, ExpenseDatabase
 
 # Create instances of Expense and ExpenseDatabase classes
